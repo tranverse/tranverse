@@ -12,7 +12,7 @@
 
   --background: oklch(1 0 0);
 
-  --foreground: #11071F;
+  --foreground: #11071f;
 
   --card: oklch(1 0 0);
 
@@ -22,7 +22,7 @@
 
   --popover-foreground: oklch(0.145 0 0);
 
-  --primary-foreground: #11071F;
+  --primary-foreground: #11071f;
 
   --secondary: oklch(0.97 0 0);
 
@@ -117,7 +117,7 @@
 }
 
 .dark {
-  --background: #11071F;
+  --background: #11071f;
 
   --foreground: oklch(0.985 0 0);
 
@@ -186,5 +186,20 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@theme inline {
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+}
+
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
   }
 }

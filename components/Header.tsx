@@ -12,7 +12,7 @@ const Header = () => {
   const t = useTranslations("HomePage.header");
 
   return (
-    <div className="flex justify-between items-center text-primary px-10 py-2 border  ">
+    <div className="flex justify-between items-center text-primary px-10 py-2   ">
       <div className="text-foreground font-semibold  cursor-pointer ">
         Tran's Portfolio
       </div>
@@ -27,10 +27,14 @@ const Header = () => {
       <div className="flex items-center gap-4 justify-center  ">
         <ThemeToggle />
         <LanguageSwitcher t={t} />
-        <FaGithub
-          className="text-foreground cursor-pointer hover:scale-110"
-          fontSize={24}
-        />
+        <div>
+          <a href="https://github.com/tranverse" target="_blank">
+            <FaGithub
+              className="text-foreground cursor-pointer hover:scale-110"
+              fontSize={24}
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

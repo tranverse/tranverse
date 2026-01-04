@@ -11,6 +11,11 @@
         "vi": "Vietnamese",
         "en": "English"
       }
+    },
+    "banner": {
+      "greeting1": "Tran",
+      "greeting2": "A Frontend Developer",
+      "motto": "Interfaces shape first impressions, code shape experiences"
     }
   }
 }

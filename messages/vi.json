@@ -11,6 +11,11 @@
         "vi": "Tiếng Việt",
         "en": "Tiếng Anh"
       }
+    },
+    "banner": {
+      "greeting1": "Xin chào! Mình là Trân",
+      "greeting2": "Xin chào! Mình là một lập trình viên Frontend",
+      "motto": "Giao diện tạo ấn tượng ban đầu, mã nguồn tạo nên trải nghiệm"
     }
   }
 }
