@@ -5,7 +5,12 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import NavItem from "./nav/NavItem";
 import ThemeToggle from "./ThemeToggle";
+import { useTranslations } from "next-intl";
+import { Button, Dropdown, MenuProps, Space } from "antd";
+import LanguageSwitcher from "./LanguageSwitcher";
 const Header = () => {
+  const t = useTranslations("HomePage.header");
+
   return (
     <div className="flex justify-between items-center text-primary px-10 py-2 border  ">
       <div className="text-foreground font-semibold  cursor-pointer ">
@@ -13,21 +18,15 @@ const Header = () => {
       </div>
 
       <div className="flex gap-10 ">
-        <NavItem title="Home" />
-        <NavItem title="Projects" />
-        <NavItem title="About" />
-        <NavItem title="Contact" />
+        <NavItem title={t("nav.home")} />
+        <NavItem title={t("nav.projects")} />
+        <NavItem title={t("nav.about")} />
+        <NavItem title={t("nav.contact")} />
       </div>
 
       <div className="flex items-center gap-4 justify-center  ">
         <ThemeToggle />
-        <Icon
-          className="hover:scale-110 cursor-pointer"
-          icon="twemoji:flag-united-states"
-          color="#ffffff"
-          strokeWidth={1.5}
-          fontSize={24}
-        />
+        <LanguageSwitcher t={t} />
         <FaGithub
           className="text-foreground cursor-pointer hover:scale-110"
           fontSize={24}

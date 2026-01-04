@@ -1,0 +1,16 @@
+{
+  "HomePage": {
+    "header": {
+      "nav": {
+        "home": "Trang chủ",
+        "about": "Bản thân",
+        "projects": "Dự án",
+        "contact": "Liên hệ"
+      },
+      "language": {
+        "vi": "Tiếng Việt",
+        "en": "Tiếng Anh"
+      }
+    }
+  }
+}
