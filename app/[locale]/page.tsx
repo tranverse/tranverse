@@ -1,11 +1,12 @@
 import Banner from "@/components/Banner";
 import Header from "@/components/Header";
-
+import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <div className=" ">
-      <Header></Header>
-      <Banner></Banner>
+      <Header />
+      <Banner />
+      <Skills />
     </div>
   );
 }

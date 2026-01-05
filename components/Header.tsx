@@ -4,15 +4,15 @@ import { useTheme } from "next-themes";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import NavItem from "./nav/NavItem";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "./ui/ThemeToggle";
 import { useTranslations } from "next-intl";
 import { Button, Dropdown, MenuProps, Space } from "antd";
-import LanguageSwitcher from "./LanguageSwitcher";
+import LanguageSwitcher from "./ui/LanguageSwitcher";
 const Header = () => {
   const t = useTranslations("HomePage.header");
 
   return (
-    <div className="flex justify-between items-center text-primary px-10 py-2   ">
+    <div className="flex justify-between items-center text-primary px-10 py-2   fixed top-0 right-0 left-0 z-[100]">
       <div className="text-foreground font-semibold  cursor-pointer ">
         Tran's Portfolio
       </div>
