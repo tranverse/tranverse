@@ -24,6 +24,28 @@
     "projects": {
       "header": "A selection of",
       "highlightHeader": "My recent projects"
+    },
+    "experience": {
+      "header1": "My",
+      "header2": "and",
+      "highlightHeader1": "education",
+      "highlightHeader2": "work experience",
+      "details": {
+        "university": {
+          "name": "Can Tho University",
+          "time": "08/2021 - 12/2025",
+          "major": "Information systems",
+          "gpa": "3.78/4.00",
+          "description": ""
+        },
+        "company": {
+          "name": "TekNix Corporation",
+          "time": "09/2025 - 12/2025",
+          "location": "Can Tho",
+          "position": "Fullstack Developer Intern",
+          "description": "Contributed to two open-source projects during the internship: extended an internal Infisical-based secret management platform with cross-environment secret referencing, and migrated DUB APIs from Next.js to NestJS to build a standardized backend."
+        }
+      }
     }
   }
 }
