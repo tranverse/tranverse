@@ -3,9 +3,13 @@ import React from "react";
 import { skills } from "@/data/skills";
 import SkillCard from "./ui/SkillCard";
 import useInView from "@/hooks/useInView";
+import HighlightHeader from "./ui/HighlightHeader";
+import { useTranslations } from "next-intl";
 
 const Skills = () => {
   const { ref, isInView } = useInView();
+  const t = useTranslations("HomePage.skills");
+
   return (
     <div
       className={`my-30  transition-all duration-1000 ${
@@ -13,10 +17,10 @@ const Skills = () => {
       } `}
       ref={ref}
     >
-      <div className="font-bold text-center text-2xl">
-        I constantly try to imporve{" "}
-        <span className="text-highlight  uppercase">My tech stack</span>
-      </div>
+      <HighlightHeader
+        text={t("header")}
+        highlightText={t("highlightHeader")}
+      />
       <div
         className={`grid grid-cols-4 md:grid-cols-8 justify-center items-center p-10  my-20 `}
       >

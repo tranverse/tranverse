@@ -13,9 +13,17 @@
       }
     },
     "banner": {
-      "greeting1": "Xin chào! Mình là Trân",
-      "greeting2": "Xin chào! Mình là một lập trình viên Frontend",
+      "greeting1": "Trân",
+      "greeting2": "một lập trình viên Frontend",
       "motto": "Giao diện tạo ấn tượng ban đầu, mã nguồn tạo nên trải nghiệm"
+    },
+    "skills": {
+      "header": "Liên tục cải thiện",
+      "highlightHeader": "nền tảng công nghệ"
+    },
+    "projects": {
+      "header": "Một số",
+      "highlightHeader": "Dự án tôi đã thực hiện"
     }
   }
 }

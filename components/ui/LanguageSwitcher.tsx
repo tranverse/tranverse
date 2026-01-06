@@ -17,7 +17,6 @@ const LanguageSwitcher = ({ t }: Props) => {
   const locale = useLocale() as Locale;
   const router = useRouter();
   const pathName = usePathname();
-  console.log("pathName", pathName);
   const items: MenuProps["items"] = [
     {
       key: "1",

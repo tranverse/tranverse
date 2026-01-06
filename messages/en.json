@@ -16,6 +16,14 @@
       "greeting1": "Tran",
       "greeting2": "A Frontend Developer",
       "motto": "Interfaces shape first impressions, code shape experiences"
+    },
+    "skills": {
+      "header": "I constantly try to imporve",
+      "highlightHeader": "My tech stack"
+    },
+    "projects": {
+      "header": "A selection of",
+      "highlightHeader": "My recent projects"
     }
   }
 }

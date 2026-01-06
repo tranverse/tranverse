@@ -219,7 +219,24 @@
   }
 }
 
-
 .hover-spin-once:hover {
   animation: spin-once 0.7s ease-in-out 0s 1 forwards;
+}
+
+@theme inline {
+  --animate-meteor-effect: meteor 5s linear infinite;
+
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
 }

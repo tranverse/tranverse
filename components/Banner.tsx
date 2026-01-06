@@ -1,5 +1,5 @@
 "use client";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useRef } from "react";
 import { Spotlight } from "./ui/spotlight";
 import { cn } from "@/lib/utils";
@@ -11,6 +11,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 const Banner = () => {
   const t = useTranslations("HomePage.banner");
   const containerRef = useRef<HTMLDivElement>(null);
+  const locale = useLocale();
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -47,7 +48,7 @@ const Banner = () => {
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-primary"></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 px-10 z-10 relative h-screen items-center">
+      <div className="grid grid-cols-1 md:grid-cols-[1.5fr_2fr] px-10 z-10 relative h-screen items-center">
         <div className="flex justify-center">
           <canvas
             id="dotlottie-canvas"
@@ -55,10 +56,12 @@ const Banner = () => {
             ref={containerRef}
           ></canvas>
         </div>
-        <div className="md:text-4xl text-xl font-bold text-center">
-          <div className=" flex justify-center ">
-            <span className="whitespace-pre">Hi! I'm </span>
-            <div className="text-[#A362FF]">
+        <div className="md:text-4xl text-xl font-bold text-center ">
+          <div className="flex justify-center items-center whitespace-nowrap">
+            <span className="whitespace-pre">
+              {locale === "vi" ? "Xin chào! Mình là " : "Hi! I'm "}
+            </span>
+            <span className="text-[#A362FF]">
               <Typewriter
                 options={{
                   strings: [t("greeting1"), t("greeting2")],
@@ -66,7 +69,7 @@ const Banner = () => {
                   loop: true,
                 }}
               />
-            </div>
+            </span>
           </div>
           <h1>{t("motto")}</h1>
         </div>
