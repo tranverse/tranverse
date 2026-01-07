@@ -32,7 +32,7 @@ const Projects = () => {
               key={index}
               ref={ref}
             >
-              <ProjectCard project={project} />
+              <ProjectCard project={project} key={index} />
             </div>
           );
         })}

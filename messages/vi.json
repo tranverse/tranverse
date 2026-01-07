@@ -44,7 +44,52 @@
           "position": "Thực tập sinh Lập trình Fullstack",
           "description": "Tham gia phát triển hai dự án trong thời gian thực tập. Dự án thứ nhất là nền tảng quản lý secret nội bộ fork từ Infisical, trực tiếp chỉnh sửa và mở rộng mã nguồn, triển khai chức năng secret reference để quản lý và tham chiếu secret giữa các môi trường. Dự án thứ hai là dự án DUB, thực hiện chuyển đổi và tái cấu trúc các API từ Next.js sang NestJS, tách backend độc lập và chuẩn hóa kiến trúc hệ thống."
         }
-      }
+      },
+      "download": "Tải CV"
+    },
+    "about": {
+      "details": {
+        "name": {
+          "label": "Họ và tên",
+          "value": "Hồ Nguyễn Bảo Trân"
+        },
+        "date": {
+          "label": "Ngày sinh",
+          "value": "05/12/2003"
+        },
+        "address": {
+          "label": "Địa chỉ",
+          "value": "Cần Thơ"
+        },
+        "phone": {
+          "label": "Số điện thoại",
+          "value": "0703219054"
+        },
+        "email": {
+          "label": "Email",
+          "value": "tranhonguyen.work@gmail.com"
+        }
+      },
+      "title": "Về Tôi",
+      "message": "Xin chào, tôi là Trân Hồ, đã hoàn thành chương trình đào tạo chuyên ngành Hệ thống Thông tin và hiện đang tìm kiếm cơ hội làm việc ở vị trí Frontend Developer. Tôi tập trung phát triển các giao diện web hiện đại, tối ưu trải nghiệm người dùng, sử dụng React, Next.js, TypeScript và Tailwind CSS. Tôi có kinh nghiệm xây dựng website đa ngôn ngữ, triển khai UI theo thiết kế, quản lý state và tích hợp API từ backend. Bên cạnh đó, nền tảng Java Spring Boot giúp tôi hiểu rõ kiến trúc hệ thống và phối hợp hiệu quả giữa frontend và backend trong quá trình phát triển sản phẩm. Mục tiêu của tôi là trở thành một Frontend Developer có nền tảng kỹ thuật vững chắc, tư duy sản phẩm tốt, không ngừng học hỏi và sẵn sàng đóng góp giá trị lâu dài cho doanh nghiệp."
+    },
+    "contact": {
+      "title": "Liên Hệ Tôi",
+      "message": "Cảm ơn anh/chị đã xem portfolio của tôi. Tôi đang tìm kiếm cơ hội ở vị trí Frontend Developer và rất mong được kết nối.",
+      "fields": {
+        "name": {
+          "required": "Vui lòng nhập tên của bạn"
+        },
+        "email": {
+          "required": "Vui lòng nhập email",
+          "invalid": "Email không hợp lệ"
+        },
+        "message": {
+          "required": "Vui lòng nhập nội dung"
+        }
+      },
+      "success": "Gửi thông tin thành công!",
+      "fail": "Gửi thất bại, vui lòng thử lại!"
     }
   }
 }

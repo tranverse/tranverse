@@ -28,6 +28,7 @@ const ProjectCard = ({ project }: Props) => {
           <div className="flex gap-2">
             {project.tech.map((tech: TechType) => (
               <Tooltip
+                key={tech.id}
                 title={tech.name}
                 mouseLeaveDelay={0}
                 mouseEnterDelay={0}

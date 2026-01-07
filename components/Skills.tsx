@@ -26,6 +26,7 @@ const Skills = () => {
       >
         {skills.map((skill, index) => (
           <div
+            key={index}
             className={`transition-all duration-700 ease-out transform ${
               isInView ? "opacity-100 rotate-0" : "opacity-0 rotate-12"
             }`}
