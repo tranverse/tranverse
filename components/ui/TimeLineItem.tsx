@@ -9,7 +9,7 @@ type TimeLineItemProps = {
   title: string;
   subtitle: string;
   description: React.ReactNode;
-  className?: string; // optional
+  className?: string;
 };
 
 const TimeLineItem = forwardRef<HTMLDivElement, TimeLineItemProps>(
@@ -32,8 +32,6 @@ const TimeLineItem = forwardRef<HTMLDivElement, TimeLineItemProps>(
             borderRadius="1.75rem"
             className="border flex-col p-6 hover:scale-[1.02] transition w-150 flex-1 border-neutral-200 dark:border-slate-800"
             style={{
-              background:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
           >

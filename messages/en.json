@@ -23,7 +23,10 @@
     },
     "projects": {
       "header": "A selection of",
-      "highlightHeader": "My recent projects"
+      "highlightHeader": "My recent projects",
+      "viewDetail": "View Detail",
+      "tooltipGit": "View source code",
+      "website": "View Website"
     },
     "experience": {
       "header1": "My",

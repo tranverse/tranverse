@@ -23,7 +23,10 @@
     },
     "projects": {
       "header": "Một số",
-      "highlightHeader": "Dự án tôi đã thực hiện"
+      "highlightHeader": "Dự án tôi đã thực hiện",
+      "viewDetail": "Xem chi tiết",
+      "tooltipGit": "Xem mã nguồn",
+      "website": "Xem website"
     },
     "experience": {
       "header1": "",

@@ -12,7 +12,7 @@ const Header = () => {
   const t = useTranslations("HomePage.header");
 
   return (
-    <div className="flex justify-between items-center text-primary px-10 py-2   fixed top-0 right-0 left-0 z-[100]">
+    <div className="flex justify-between items-center text-primary px-10 py-2   fixed top-0 right-0 left-0 z-[100] h-16 ">
       <div className="text-foreground font-semibold  cursor-pointer ">
         Tran's Portfolio
       </div>
