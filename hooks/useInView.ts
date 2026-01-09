@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useRef, useState } from "react";
 
 export default function useInView() {
@@ -14,7 +14,7 @@ export default function useInView() {
           setIsInView(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2, rootMargin: "-80px 0px -20% 0px" }
     );
 
     observer.observe(ref.current);

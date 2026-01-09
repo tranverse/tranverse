@@ -12,7 +12,7 @@ const Experience = () => {
   const { ref: rightRef, isInView: rightInView } = useInView();
 
   return (
-    <div className="my-30 ">
+    <div className="my-30 scroll-mt-16" id="experience">
       <div className="font-bold text-center text-4xl  ">
         {t("header1")}{" "}
         <span className="text-highlight uppercase">

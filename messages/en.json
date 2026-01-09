@@ -15,7 +15,7 @@
     "banner": {
       "greeting1": "Tran",
       "greeting2": "A Frontend Developer",
-      "motto": "Interfaces shape first impressions, code shapes experiences"
+      "motto": "Interfaces shape first impressions, \n code shapes experience"
     },
     "skills": {
       "header": "I constantly try to imporve",

@@ -10,7 +10,7 @@ const About = () => {
   const { ref: textRef, isInView: textInView } = useInView();
 
   return (
-    <div className="my-30">
+    <div className="my-30 scroll-mt-16 " id="about">
       <div className="font-bold text-center text-4xl tracking-wide leading-tight">
         {t("title")}
       </div>

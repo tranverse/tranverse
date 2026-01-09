@@ -89,7 +89,7 @@ export default function ProjectDetail({ project }: Props) {
                 </tr>
                 <tr className="align-top">
                   <td className="uppercase text-xs tracking-widest  py-4 font-bold">
-                    {locale === "en" ? "Technology" : "Công nghệ"}
+                    {locale === "en" ? "Main Technology" : "Công nghệ chính"}
                   </td>
                   <td className="text-xl py-2">
                     <div className="flex flex-wrap gap-12">

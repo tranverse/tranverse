@@ -12,7 +12,8 @@ const Skills = () => {
 
   return (
     <div
-      className={`my-30  transition-all duration-1000 ${
+      id="skills"
+      className={`my-30  transition-all duration-1000 scroll-mt-16 ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"
       } `}
       ref={ref}

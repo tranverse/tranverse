@@ -26,7 +26,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="relative ">
+    <div className="relative " id="banner">
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Spotlight
           className="h-[80vh] w-[50vw] top-50 left-full"
@@ -71,7 +71,7 @@ const Banner = () => {
               />
             </span>
           </div>
-          <h1>{t("motto")}</h1>
+          <h1 className="whitespace-break-spaces ">{t("motto")}</h1>
         </div>
       </div>
     </div>

@@ -10,13 +10,16 @@ const Projects = () => {
   const t = useTranslations("HomePage.projects");
   const { ref, isInView } = useInView();
   return (
-    <div className="my-30 ">
+    <div className="my-30 scroll-mt-16" id="projects">
       <HighlightHeader
         text={t("header")}
         highlightText={t("highlightHeader")}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-10  px-30 my-20 ">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-20 py-10  px-30 my-20 "
+        ref={ref}
+      >
         {projects.map((project, index) => {
           const envenCard = index % 2;
           return (
@@ -30,7 +33,6 @@ const Projects = () => {
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
               key={index}
-              ref={ref}
             >
               <ProjectCard project={project} key={index} t={t} />
             </div>
