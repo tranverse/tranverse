@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
           text-xs md:text-sm
         "
       >
-        <p className=" tracking-wide">© 2026 Trân Hồ</p>
+        <p className=" tracking-wide">© {new Date().getFullYear()} Trân Hồ</p>
 
         <p className=" tracking-wide">
           Made with{" "}
