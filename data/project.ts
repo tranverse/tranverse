@@ -71,6 +71,8 @@ export const projects: ProjectType[] = [
           "Tự động tạo referenced secret key khi giá trị trùng với secret ở service khác.",
           "Hỗ trợ chỉnh sửa, xóa và đồng bộ giá trị giữa các secret liên kết.",
           "Xây dựng RBAC để kiểm soát quyền truy cập và thao tác trên secret.",
+          "Xây dựng trang quản lý hiển thị các secret có cùng giá trị, cho phép người dùng tạo secret tham chiếu theo lựa chọn.",
+          "Cho phép tìm kiếm secret tham chiếu theo tên của các secret mà nó liên kết.",
         ],
         message: `Dự án là một fork từ Infisical OSS, mở rộng với chức năng quản lý secret tham chiếu. 
                   Khi người dùng tạo một secret mới, hệ thống sẽ tự động kiểm tra nếu giá trị của nó trùng với 
@@ -85,6 +87,9 @@ export const projects: ProjectType[] = [
           "Implemented referenced secret key creation with auto-sync across services.",
           "Supported edit, delete, and update propagation for linked secrets.",
           "Added RBAC-based permission control for secure secret access.",
+          "Provided a dedicated page that groups secrets with identical values and allows users to create referenced secrets.",
+          "Enabled searching secrets by name for quick discovery and management.",
+          "Supported searching referenced secrets by the names of their linked secrets.",
         ],
         message: `This project is a fork of Infisical OSS, extended with reference secret management functionality. 
                   When a user creates a new secret, the system automatically checks if its value matches any existing 
@@ -174,10 +179,10 @@ export const projects: ProjectType[] = [
           "Giao diện phân quyền cho Admin, Driver và Customer.",
           "Tích hợp tính cước và điểm thưởng khách hàng.",
         ],
-        message: `Hệ thống giúp quản lý hoạt động đặt xe trực tuyến.
-          Người dùng có thể tạo và theo dõi chuyến đi theo thời gian thực. 
-          Admin dễ dàng quản lý tài xế, phương tiện và khách hàng. 
-          Tính năng tính cước và điểm thưởng giúp tối ưu trải nghiệm khách hàng.`,
+        message: `Dự án phát triển hệ thống taxi công nghệ mô phỏng thời gian thực. Hệ thống quản lý tài khoản admin, 
+         tài xế và khách hàng; lưu trữ thông tin tài xế, phương tiện, chuyến đi, giá cước và đánh giá theo tiêu chí cấu hình.
+          Chức năng theo dõi vị trí xe, trạng thái chuyến đi và truy vết lộ trình được mô phỏng theo thời gian thực.
+           Hệ thống hỗ trợ tìm kiếm tài xế rảnh, xử lý vòng đời chuyến đi và ghi nhận đánh giá sau chuyến.`,
       },
       en: {
         summary: "Web-based taxi booking and management system.",
@@ -187,10 +192,11 @@ export const projects: ProjectType[] = [
           "Built role-based UI for Admin, Driver, and Customer.",
           "Integrated fare calculation and loyalty points.",
         ],
-        message: `The system manages all aspects of online taxi booking. 
-          Users can create and track rides in real-time. 
-          Admins can easily manage drivers, vehicles, and customers. 
-          Fare calculation and loyalty points enhance the customer experience.`,
+        message: `The project focuses on developing a real-time simulated ride-hailing taxi system.
+         The system manages admin, driver, and customer accounts, and stores information about drivers,
+          vehicles, trips, fares, and configurable rating criteria. Vehicle location tracking, trip status monitoring,
+           and route tracing are simulated in real time. The system also supports searching for available drivers, 
+           handling the trip lifecycle, and recording post-trip evaluations.`,
       },
     },
 
@@ -300,8 +306,8 @@ export const projects: ProjectType[] = [
         bullets: [
           "Trích xuất hình ảnh tự động từ file PDF bài báo khoa học của Đại học Cần Thơ.",
           "Ứng dụng các mô hình học sâu VGG16, ConvNeXt V2 và AlexNet.",
-          "Sử dụng FAISS để lập chỉ mục và tìm kiếm ảnh tương đồng.",
           "Phân loại ảnh trong 11 lớp dữ liệu học thuật.",
+          "Sử dụng FAISS để lập chỉ mục và tìm kiếm ảnh tương đồng.",
         ],
         message: `Đề tài tập trung xây dựng hệ thống tìm kiếm ảnh tương đồng từ kho hình ảnh
       được trích xuất từ các bài báo khoa học của Đại học Cần Thơ.

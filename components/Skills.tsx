@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className={`my-30  transition-all duration-1000 scroll-mt-16 ${
+      className={`lg:my-30 my-20 px-4   transition-all duration-1000 scroll-mt-16 ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"
       } `}
       ref={ref}
@@ -23,7 +23,7 @@ const Skills = () => {
         highlightText={t("highlightHeader")}
       />
       <div
-        className={`grid grid-cols-4 md:grid-cols-8 justify-center items-center p-10  my-20 `}
+        className={`grid grid-cols-4 md:grid-cols-8 justify-center items-center  lg:my-20  `}
       >
         {skills.map((skill, index) => (
           <div

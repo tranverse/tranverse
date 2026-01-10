@@ -48,7 +48,7 @@
           "description": "Tham gia phát triển hai dự án trong thời gian thực tập. Dự án thứ nhất là nền tảng quản lý secret nội bộ fork từ Infisical, trực tiếp chỉnh sửa và mở rộng mã nguồn, triển khai chức năng secret reference để quản lý và tham chiếu secret giữa các môi trường. Dự án thứ hai là dự án DUB, thực hiện chuyển đổi và tái cấu trúc các API từ Next.js sang NestJS, tách backend độc lập và chuẩn hóa kiến trúc hệ thống."
         }
       },
-      "download": "Tải CV"
+      "download": "Xem CV"
     },
     "about": {
       "details": {
@@ -74,7 +74,7 @@
         }
       },
       "title": "Về Tôi",
-      "message": "Xin chào, tôi là Trân Hồ, đã hoàn thành chương trình đào tạo chuyên ngành Hệ thống Thông tin và hiện đang tìm kiếm cơ hội làm việc ở vị trí Frontend Developer. Tôi tập trung phát triển các giao diện web hiện đại, tối ưu trải nghiệm người dùng, sử dụng React, Next.js, TypeScript và Tailwind CSS. Tôi có kinh nghiệm xây dựng website đa ngôn ngữ, triển khai UI theo thiết kế, quản lý state và tích hợp API từ backend. Bên cạnh đó, nền tảng Java Spring Boot giúp tôi hiểu rõ kiến trúc hệ thống và phối hợp hiệu quả giữa frontend và backend trong quá trình phát triển sản phẩm. Mục tiêu của tôi là trở thành một Frontend Developer có nền tảng kỹ thuật vững chắc, tư duy sản phẩm tốt, không ngừng học hỏi và sẵn sàng đóng góp giá trị lâu dài cho doanh nghiệp."
+      "message": "Xin chào, tôi là Trân. Tôi đã tốt nghiệp chuyên ngành Hệ thống Thông tin và hiện đang tìm kiếm cơ hội làm việc ở vị trí Frontend Developer. Tôi tập trung xây dựng các giao diện web hiện đại, thân thiện với người dùng bằng React, Next.js, TypeScript và Tailwind CSS. Tôi có kinh nghiệm triển khai UI, quản lý trạng thái ứng dụng và tích hợp API từ các dịch vụ backend. Tôi cũng đã xây dựng các dự án sử dụng Java Spring Boot, giúp tôi hiểu rõ kiến trúc hệ thống, thiết kế API và phối hợp hiệu quả với đội backend. Mục tiêu của tôi là phát triển trở thành một Frontend Developer vững chuyên môn, có tư duy sản phẩm và mang lại giá trị lâu dài cho đội ngũ cũng như doanh nghiệp."
     },
     "contact": {
       "title": "Liên Hệ Tôi",

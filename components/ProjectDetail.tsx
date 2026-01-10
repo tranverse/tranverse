@@ -21,22 +21,22 @@ export default function ProjectDetail({ project }: Props) {
     <>
       <AuroraBackground className="absolute inset-0 -z-10 top-0  " />
 
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12 my-32">
+      <div className="relative max-w-7xl mx-auto px-4   sm:px-12 my-32">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
-          className="flex flex-col gap-32"
+          className="flex flex-col sm:gap-32 gap-20 "
         >
           <section className="relative w-full text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight capitalize ">
               {project.name[locale]}
             </h1>
-            <div className="flex justify-between ">
+            <div className="flex sm:flex-col md:flex-col lg:flex-row  flex-col     justify-between ">
               <p className="mt-6 max-w-2xl mx-auto md:mx-0 text-lg text-muted-foreground leading-relaxed text-justify">
                 {project.description[locale].message}
               </p>
-              <div className="mt-12 flex justify-center md:justify-start">
+              <div className="mt-12 flex justify-center sm:justify-center  md:justify-center lg:justify-start">
                 <a
                   target="_blank"
                   href={
@@ -47,8 +47,7 @@ export default function ProjectDetail({ project }: Props) {
                 >
                   <HoverBorderGradient
                     containerClassName="rounded-full"
-                    as="a"
-                    className=" flex items-center gap-3 px-8 py-4 text-lg"
+                    className=" flex items-center gap-3 px-8 py-4 text-lg cursor-pointer"
                   >
                     <span>
                       {project.id === "tekvault"
@@ -65,18 +64,15 @@ export default function ProjectDetail({ project }: Props) {
               </div>
             </div>
           </section>
-          <section className="">
+          <section className="flex sm:flex-col md:flex-col lg:flex-row  flex-col gap-4 ">
             <table className="w-full text-left">
               <tbody>
                 <tr className="align-top">
                   <td className="uppercase text-xs tracking-widest  w-1/6 py-4 font-bold">
                     {locale === "en" ? "Role" : "Vai trò"}
                   </td>
-                  <td className="text-xl py-4 w-1/2 opacity-50">{project.role[locale]}</td>
-                  <td className="text-lg opacity-70 py-2 w-1/2  " rowSpan={3}>
-                    {project.description[locale].bullets.map((des, index) => (
-                      <p className="text-justify">{des}</p>
-                    ))}
+                  <td className="lg:text-xl py-4 w-1/2 opacity-50">
+                    {project.role[locale]}
                   </td>
                 </tr>
 
@@ -84,8 +80,9 @@ export default function ProjectDetail({ project }: Props) {
                   <td className="uppercase text-xs tracking-widest  py-4 font-bold">
                     {locale === "en" ? "Duration" : "Thời gian"}
                   </td>
-                  <td className="text-xl py-2 opacity-50">{project.duration}</td>
-                  <td className="text-lg opacity-70 py-2"></td>
+                  <td className="lg:text-xl py-2 opacity-50">
+                    {project.duration} 
+                  </td>
                 </tr>
                 <tr className="align-top">
                   <td className="uppercase text-xs tracking-widest  py-4 font-bold">
@@ -96,18 +93,27 @@ export default function ProjectDetail({ project }: Props) {
                       {project.tech.map((tech, index) => (
                         <div
                           key={index}
-                          className="flex items-center gap-4 text-lg opacity-70 hover:opacity-100 transition"
+                          className="flex items-center gap-4 sm:text-lg text-sm  opacity-70 hover:opacity-100 transition"
                         >
-                          <Icon icon={tech.icon} className="text-4xl" />
+                          <Icon
+                            icon={tech.icon}
+                            className="sm:text-4xl text-md  "
+                          />
                           <span>{tech.name}</span>
                         </div>
                       ))}
                     </div>
                   </td>
-                  <td className="text-lg opacity-70 py-2"></td>
                 </tr>
               </tbody>
             </table>
+            <div>
+              {project.description[locale].bullets.map((des, index) => (
+                <p className="text-justify" key={index}>
+                  {des}
+                </p>
+              ))}
+            </div>
           </section>
 
           <section className="space-y-20">

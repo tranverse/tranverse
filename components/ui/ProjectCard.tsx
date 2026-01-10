@@ -32,8 +32,8 @@ const ProjectCard = ({ project, t }: Props) => {
           </p>
         </div>
 
-        <div className=" flex justify-between gap-2 w-full">
-          <div className="flex gap-2">
+        <div className=" flex justify-between gap-2 w-full flex-col sm:flex-row">
+          <div className="flex gap-2  sm:max-w-1/2        overflow-x-hidden    ">
             {project.tech.map((tech: TechType) => (
               <Tooltip
                 key={tech.id}
@@ -43,7 +43,7 @@ const ProjectCard = ({ project, t }: Props) => {
               >
                 <div
                   key={tech.id}
-                  className="rounded-full border p-1 flex items-center justify-center w-10 h-10 cursor-pointer "
+                  className="rounded-full border p-1 flex items-center justify-center w-10 h-10 cursor-pointer flex-shrink-0  "
                 >
                   <Icon icon={tech.icon} fontSize={20} color="" />
                 </div>

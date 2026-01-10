@@ -10,16 +10,19 @@ const About = () => {
   const { ref: textRef, isInView: textInView } = useInView();
 
   return (
-    <div className="my-30 scroll-mt-16 " id="about">
-      <div className="font-bold text-center text-4xl tracking-wide leading-tight">
+    <div
+      className="lg:my-30 my-20 px-4 scroll-mt-16 overflow-x-hidden "
+      id="about"
+    >
+      <div className="font-bold text-center lg:text-4xl text-xl  tracking-wide leading-tight  ">
         {t("title")}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 m-20 p-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10  lg:mx-20 mt-10 lg:mt-20    ">
         <div
           ref={imgRef}
-          className={`
-            flex justify-center
+          className={` 
+            flex justify-center overflow-hidden 
             transition-all duration-1000 ease-out
             will-change-transform will-change-opacity
             ${
@@ -41,7 +44,7 @@ const About = () => {
         <div
           ref={textRef}
           className={`
-            font-semibold flex flex-col gap-2
+            font-semibold flex flex-col gap-2 overflow-hidden 
             transition-all duration-1000 ease-out delay-150
             will-change-transform will-change-opacity
             ${
@@ -52,7 +55,7 @@ const About = () => {
           `}
           style={{ transitionDelay: "500ms" }}
         >
-          <p>{t("message")}</p>
+          <p className="text-justify">{t("message")}</p>
 
           <p>
             <span className="text-highlight font-bold">

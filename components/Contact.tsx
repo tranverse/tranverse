@@ -37,18 +37,20 @@ const Contact: React.FC = () => {
     }
   };
   return (
-    <div className="my-30 scroll-mt-16" id="contact">
+    <div className="lg:my-30 my-20 px-4 scroll-mt-16" id="contact">
       <div className="font-bold text-center text-4xl tracking-wide leading-tight">
         {t("title")}
       </div>
 
       <motion.div
-        className="my-20 p-10 mx-30"
+        className="lg:my-10  lg:mx-30" 
         initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }} 
-        viewport={{ once: true, amount: 0.3 }} 
-        transition={{ duration: 0.8, ease: "easeOut" }} 
-      >        <p className="italic font-semibold text-center mb-10 ">
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        {" "}
+        <p className="italic font-semibold text-center mb-10 ">
           {t("message")}
         </p>
         <Form<FormValues> onFinish={handleSubmit} layout="vertical" form={form}>

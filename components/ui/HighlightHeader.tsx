@@ -7,7 +7,7 @@ type Props = {
 
 const HighlightHeader = ({ text, highlightText }: Props) => {
   return (
-    <div className="font-bold text-center text-4xl  ">
+    <div className="font-bold text-center text-xl sm:text-4xl       ">
       {text} <span className="text-highlight uppercase">{highlightText}</span>
     </div>
   );

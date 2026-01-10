@@ -10,7 +10,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Banner = () => {
   const t = useTranslations("HomePage.banner");
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLCanvasElement>(null);
   const locale = useLocale();
   useEffect(() => {
     if (!containerRef.current) return;
@@ -48,12 +48,12 @@ const Banner = () => {
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-primary"></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-[1.5fr_2fr] px-10 z-10 relative h-screen items-center">
-        <div className="flex justify-center">
+      <div className="grid grid-cols-1  lg:grid-cols-[1.5fr_2fr] sm:px-10 z-10 relative h-screen items-center">
+        <div className="flex justify-center overflow-hidden  ">
           <canvas
             id="dotlottie-canvas"
             style={{ width: "400px", height: "400px" }}
-            ref={containerRef}
+            ref={containerRef}   
           ></canvas>
         </div>
         <div className="md:text-4xl text-xl font-bold text-center ">

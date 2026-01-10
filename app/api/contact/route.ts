@@ -125,8 +125,9 @@ export async function POST(req: NextRequest) {
                         font-size:14px;
                         line-height:1.6;
                         color:#333;
-                        white-space:pre-wrap;
+                        white-space: normal;
                         word-break:break-word;
+                        text-align:justify;
                     ">
                         ${safeMessage}
                     </div>

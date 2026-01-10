@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className=" ">
       <Header />
-      <Banner />
+      <Banner /> 
       <Skills />
       <Projects />
       <Experience />

@@ -49,7 +49,7 @@
           "description": "Contributed to two open-source projects during the internship: extended an internal Infisical-based secret management platform with cross-environment secret referencing, and migrated DUB APIs from Next.js to NestJS to build a standardized backend."
         }
       },
-      "download": "Download My CV"
+      "download": "View My CV"
     },
     "about": {
       "details": {
@@ -74,8 +74,8 @@
           "value": "tranhonguyen.work@gmail.com"
         }
       },
-      "title": "About me",
-      "message": "Hello, my name is Tran Ho. I have completed my degree in Information Systems and am currently seeking an opportunity as a Frontend Developer. I focus on building modern, user-friendly web interfaces using React, Next.js, TypeScript, and Tailwind CSS. I have experience developing multilingual websites, implementing UI designs, managing application state, and integrating APIs from backend services. In addition, my background in Java Spring Boot allows me to understand system architecture and collaborate effectively with backend teams. My goal is to grow into a skilled Frontend Developer with a strong technical foundation, product-oriented thinking, and the ability to deliver long-term value to both the team and the company."
+      "title": "About Me",
+      "message": "Hello, my name is Tran. I have completed my degree in Information Systems and am currently seeking an opportunity as a Frontend Developer. I focus on building modern, user-friendly web interfaces using React, Next.js, TypeScript, and Tailwind CSS. I have experience implementing UI designs, managing application state, and integrating APIs from backend services. I have also built projects using Java Spring Boot, which helps me understand system architecture, API design, and collaborate effectively with backend teams. My goal is to grow into a skilled Frontend Developer with a strong technical foundation, product-oriented thinking, and the ability to deliver long-term value to both the team and the company."
     },
     "contact": {
       "title": "Contact Me",

@@ -10,21 +10,24 @@ const Projects = () => {
   const t = useTranslations("HomePage.projects");
   const { ref, isInView } = useInView();
   return (
-    <div className="my-30 scroll-mt-16" id="projects">
+    <div
+      className="lg:my-30 my-20 px-4 scroll-mt-16 overflow-x-hidden "
+      id="projects"
+    >
       <HighlightHeader
         text={t("header")}
         highlightText={t("highlightHeader")}
       />
 
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-20 py-10  px-30 my-20 "
+        className="grid grid-cols-1 lg:grid-cols-2 gap-20 py-10 lg:pt-20   lg:px-30 "
         ref={ref}
       >
         {projects.map((project, index) => {
           const envenCard = index % 2;
           return (
             <div
-              className={`transition-all duration-700 ease-in-out ${
+              className={`transition-all duration-700 ease-in-out flex justify-center    ${
                 isInView
                   ? "opacity-100 translate-x-0"
                   : ` ${

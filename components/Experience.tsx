@@ -12,8 +12,11 @@ const Experience = () => {
   const { ref: rightRef, isInView: rightInView } = useInView();
 
   return (
-    <div className="my-30 scroll-mt-16" id="experience">
-      <div className="font-bold text-center text-4xl  ">
+    <div
+      className="lg:my-30 my-20 px-4  scroll-mt-16 overflow-x-hidden "
+      id="experience"
+    >
+      <div className="font-bold text-center sm:text-4xl text-xl   ">
         {t("header1")}{" "}
         <span className="text-highlight uppercase">
           {t("highlightHeader1")}{" "}
@@ -24,8 +27,8 @@ const Experience = () => {
         </span>
       </div>
 
-      <div className=" relative mt-20 py-10 mb-10    ">
-        <div className="absolute left-1/2 top-0 h-full w-0.5 bg-neutral-300 dark:bg-neutral-700 -translate-x-1/2" />
+      <div className=" relative mt-10 py-10 mb-10  overflow-visible    ">
+        <div className=" block  absolute left-1/2 top-0 h-full w-0.5 bg-neutral-300 dark:bg-neutral-700 -translate-x-1/2" />
 
         <TimeLineItem
           ref={leftRef}
