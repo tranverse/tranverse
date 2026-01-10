@@ -19,8 +19,9 @@ export default function ProjectDetail({ project }: Props) {
 
   return (
     <>
-      <AuroraBackground className="absolute inset-0 -z-10 top-0  " />
-
+      <AuroraBackground className="absolute inset-0 -z-10 top-0">
+        <div />
+      </AuroraBackground>
       <div className="relative max-w-7xl mx-auto px-4   sm:px-12 my-32">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -81,7 +82,7 @@ export default function ProjectDetail({ project }: Props) {
                     {locale === "en" ? "Duration" : "Thời gian"}
                   </td>
                   <td className="lg:text-xl py-2 opacity-50">
-                    {project.duration} 
+                    {project.duration}
                   </td>
                 </tr>
                 <tr className="align-top">
