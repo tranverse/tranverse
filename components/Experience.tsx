@@ -71,7 +71,7 @@ const Experience = () => {
       <div className="flex justify-center items-center   ">
         <a
           target="_blank"
-          href="Frontend-Developer-Ho-Nguyen-Bao-Tran.pdf"
+          href="Fontend-Devloper-Ho-Nguyen-Bao-Tran-CV.pdf"
           className=" cursor-pointer   px-6 py-3 text-lg font-semibold rounded-full bg-highlight text-white  hover:scale-[1.03]"
         >
           {t("download")}
