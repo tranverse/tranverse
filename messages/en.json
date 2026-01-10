@@ -1,0 +1,99 @@
+{
+  "HomePage": {
+    "header": {
+      "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+      },
+      "language": {
+        "vi": "Vietnamese",
+        "en": "English"
+      }
+    },
+    "banner": {
+      "greeting1": "Tran",
+      "greeting2": "A Frontend Developer",
+      "motto": "Interfaces shape first impressions, \n code shapes experience"
+    },
+    "skills": {
+      "header": "I constantly try to imporve",
+      "highlightHeader": "My tech stack"
+    },
+    "projects": {
+      "header": "A selection of",
+      "highlightHeader": "My recent projects",
+      "viewDetail": "View Detail",
+      "tooltipGit": "View source code",
+      "website": "View Website"
+    },
+    "experience": {
+      "header1": "My",
+      "header2": "and",
+      "highlightHeader1": "education",
+      "highlightHeader2": "work experience",
+      "details": {
+        "university": {
+          "name": "Can Tho University",
+          "time": "08/2021 - 12/2025",
+          "major": "Information systems",
+          "gpa": "3.78/4.00",
+          "description": ""
+        },
+        "company": {
+          "name": "TekNix Corporation",
+          "time": "09/2025 - 12/2025",
+          "location": "Can Tho",
+          "position": "Fullstack Developer Intern",
+          "description": "Contributed to two open-source projects during the internship: extended an internal Infisical-based secret management platform with cross-environment secret referencing, and migrated DUB APIs from Next.js to NestJS to build a standardized backend."
+        }
+      },
+      "download": "View My CV"
+    },
+    "about": {
+      "details": {
+        "name": {
+          "label": "Name",
+          "value": "Ho Nguyen Bao Tran"
+        },
+        "date": {
+          "label": "Date of Birth",
+          "value": "05/12/2003"
+        },
+        "address": {
+          "label": "Address",
+          "value": "Can Tho"
+        },
+        "phone": {
+          "label": "Phone",
+          "value": "0703219054"
+        },
+        "email": {
+          "label": "Email",
+          "value": "tranhonguyen.work@gmail.com"
+        }
+      },
+      "title": "About Me",
+      "message": "Hello, my name is Tran. I have completed my degree in Information Systems and am currently seeking an opportunity as a Frontend Developer. I focus on building modern, user-friendly web interfaces using React, Next.js, TypeScript, and Tailwind CSS. I have experience implementing UI designs, managing application state, and integrating APIs from backend services. I have also built projects using Java Spring Boot, which helps me understand system architecture, API design, and collaborate effectively with backend teams. My goal is to grow into a skilled Frontend Developer with a strong technical foundation, product-oriented thinking, and the ability to deliver long-term value to both the team and the company."
+    },
+    "contact": {
+      "title": "Contact Me",
+      "message": "Thank you for reviewing my portfolio. I am open to Frontend Developer opportunities and would welcome the opportunity to connect.",
+      "fields": {
+        "name": {
+          "required": "Please enter your name"
+        },
+        "email": {
+          "required": "Please enter your email",
+          "invalid": "Invalid email"
+        },
+        "message": {
+          "required": "Please enter a message"
+        }
+      },
+      "success": "Message sent successfully!",
+      "fail": "Failed to send message"
+    }
+  }
+}

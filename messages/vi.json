@@ -1,0 +1,98 @@
+{
+  "HomePage": {
+    "header": {
+      "nav": {
+        "home": "Trang chủ",
+        "about": "Bản thân",
+        "projects": "Dự án",
+        "contact": "Liên hệ"
+      },
+      "language": {
+        "vi": "Tiếng Việt",
+        "en": "Tiếng Anh"
+      }
+    },
+    "banner": {
+      "greeting1": "Trân",
+      "greeting2": "một lập trình viên Frontend",
+      "motto": "Giao diện tạo ấn tượng ban đầu, mã nguồn tạo nên trải nghiệm"
+    },
+    "skills": {
+      "header": "Liên tục cải thiện",
+      "highlightHeader": "nền tảng công nghệ"
+    },
+    "projects": {
+      "header": "Một số",
+      "highlightHeader": "Dự án tôi đã thực hiện",
+      "viewDetail": "Xem chi tiết",
+      "tooltipGit": "Xem mã nguồn",
+      "website": "Xem website"
+    },
+    "experience": {
+      "header1": "",
+      "header2": "và",
+      "highlightHeader1": "Học vấn",
+      "highlightHeader2": "kinh nghiệm làm việc",
+      "details": {
+        "university": {
+          "name": "Đại học Cần Thơ",
+          "time": "08/2021 - 12/2025",
+          "major": "Hệ thống thông tin",
+          "gpa": "3.78/4.00"
+        },
+        "company": {
+          "name": "Công ty TekNix – Chi nhánh Cần Thơ",
+          "time": "09/2025 - 12/2025",
+          "location": "Cần Thơ",
+          "position": "Thực tập sinh Lập trình Fullstack",
+          "description": "Tham gia phát triển hai dự án trong thời gian thực tập. Dự án thứ nhất là nền tảng quản lý secret nội bộ fork từ Infisical, trực tiếp chỉnh sửa và mở rộng mã nguồn, triển khai chức năng secret reference để quản lý và tham chiếu secret giữa các môi trường. Dự án thứ hai là dự án DUB, thực hiện chuyển đổi và tái cấu trúc các API từ Next.js sang NestJS, tách backend độc lập và chuẩn hóa kiến trúc hệ thống."
+        }
+      },
+      "download": "Xem CV"
+    },
+    "about": {
+      "details": {
+        "name": {
+          "label": "Họ và tên",
+          "value": "Hồ Nguyễn Bảo Trân"
+        },
+        "date": {
+          "label": "Ngày sinh",
+          "value": "05/12/2003"
+        },
+        "address": {
+          "label": "Địa chỉ",
+          "value": "Cần Thơ"
+        },
+        "phone": {
+          "label": "Số điện thoại",
+          "value": "0703219054"
+        },
+        "email": {
+          "label": "Email",
+          "value": "tranhonguyen.work@gmail.com"
+        }
+      },
+      "title": "Về Tôi",
+      "message": "Xin chào, tôi là Trân. Tôi đã tốt nghiệp chuyên ngành Hệ thống Thông tin và hiện đang tìm kiếm cơ hội làm việc ở vị trí Frontend Developer. Tôi tập trung xây dựng các giao diện web hiện đại, thân thiện với người dùng bằng React, Next.js, TypeScript và Tailwind CSS. Tôi có kinh nghiệm triển khai UI, quản lý trạng thái ứng dụng và tích hợp API từ các dịch vụ backend. Tôi cũng đã xây dựng các dự án sử dụng Java Spring Boot, giúp tôi hiểu rõ kiến trúc hệ thống, thiết kế API và phối hợp hiệu quả với đội backend. Mục tiêu của tôi là phát triển trở thành một Frontend Developer vững chuyên môn, có tư duy sản phẩm và mang lại giá trị lâu dài cho đội ngũ cũng như doanh nghiệp."
+    },
+    "contact": {
+      "title": "Liên Hệ Tôi",
+      "message": "Cảm ơn anh/chị đã xem portfolio của tôi. Tôi đang tìm kiếm cơ hội ở vị trí Frontend Developer và rất mong được kết nối.",
+      "fields": {
+        "name": {
+          "required": "Vui lòng nhập tên của bạn"
+        },
+        "email": {
+          "required": "Vui lòng nhập email",
+          "invalid": "Email không hợp lệ"
+        },
+        "message": {
+          "required": "Vui lòng nhập nội dung"
+        }
+      },
+      "success": "Gửi thông tin thành công!",
+      "fail": "Gửi thất bại, vui lòng thử lại!"
+    }
+  }
+}
