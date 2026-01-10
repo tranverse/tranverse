@@ -1,8 +1,9 @@
 "use client";
-import { Button, Flex, Form, Input, message } from "antd";
+import { App, Button, Flex, Form, Input } from "antd";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
 
 type FormValues = {
   name: string;
@@ -16,7 +17,6 @@ const Contact: React.FC = () => {
   const [form] = Form.useForm<FormValues>();
   const handleSubmit = async (values: FormValues) => {
     setLoading(true);
-    console.log("values", values);
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -25,13 +25,13 @@ const Contact: React.FC = () => {
       });
 
       if (response.ok) {
-        message.success(t("success") || "Message sent successfully!");
+        toast.success(t("success") || "Message sent successfully!");
         form.resetFields();
       } else {
-        message.error(t("fail") || "Failed to send message");
+        toast.error(t("fail") || "Failed to send message");
       }
     } catch {
-      message.error(t("fail") || "Something went wrong");
+      toast.error(t("fail") || "Something went wrong");
     } finally {
       setLoading(false);
     }
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
       </div>
 
       <motion.div
-        className="lg:my-10  lg:mx-30" 
+        className="lg:my-10  lg:mx-30"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}

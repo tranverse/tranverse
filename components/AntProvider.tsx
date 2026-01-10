@@ -1,5 +1,5 @@
 "use client";
-import { ConfigProvider, theme } from "antd";
+import { App, ConfigProvider, theme } from "antd";
 import { useTheme } from "next-themes";
 
 export default function AntProvider({
