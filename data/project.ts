@@ -88,7 +88,6 @@ export const projects: ProjectType[] = [
           "Supported edit, delete, and update propagation for linked secrets.",
           "Added RBAC-based permission control for secure secret access.",
           "Provided a dedicated page that groups secrets with identical values and allows users to create referenced secrets.",
-          "Enabled searching secrets by name for quick discovery and management.",
           "Supported searching referenced secrets by the names of their linked secrets.",
         ],
         message: `This project is a fork of Infisical OSS, extended with reference secret management functionality. 
