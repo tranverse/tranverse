@@ -33,6 +33,10 @@ export type TechType = {
   icon: string;
 };
 export const techs: TechType[] = [
+  { id: "java", name: "Java", icon: "logos:java" },
+  { id: "typescript", name: "TypeScript", icon: "logos:typescript-icon" },
+  { id: "redis", name: "Redis", icon: "logos:redis" },
+  { id: "nginx", name: "Nginx", icon: "logos:nginx" },
   { id: "react", name: "ReactJS", icon: "logos:react" },
   { id: "spring", name: "Spring Boot", icon: "logos:spring-icon" },
   { id: "mysql", name: "MySQL", icon: "logos:mysql" },
@@ -52,13 +56,106 @@ export const techs: TechType[] = [
 
 export const projects: ProjectType[] = [
   {
+    id: "realtime-chat",
+    name: {
+      vi: "Ứng dụng nhắn tin thời gian thực",
+      en: "Realtime Chat Application",
+    },
+    duration: "07/2026 – 10/2026",
+    github: "https://github.com/tranverse/realtime-chat-application",
+    role: {
+      vi: "Fullstack Developer | Dự án cá nhân",
+      en: "Fullstack Developer | Personal Project",
+    },
+    img: "https://res.cloudinary.com/dqobwpob4/image/upload/v1792776407/Screenshot_2026-10-24_002627_w6er3n.png",
+    video: "https://www.youtube.com/watch?v=Bmk9TcEyu90",
+    description: {
+      vi: {
+        summary:
+          "Ứng dụng nhắn tin realtime hỗ trợ chat cá nhân, nhóm, xác thực bảo mật và trạng thái online/offline đa thiết bị.",
+        bullets: [
+          "Thiết kế backend modular monolith với REST API và STOMP/WebSocket cho nhắn tin, typing indicators và read receipts.",
+          "Xây dựng đăng ký qua email OTP, Google OAuth2, JWT refresh-token rotation, reuse detection và thu hồi phiên đăng nhập.",
+          "Phát triển nhóm chat với vai trò thành viên, liên kết mời, phê duyệt yêu cầu tham gia, trả lời, sửa và xóa mềm tin nhắn.",
+          "Dùng Redis để giới hạn tần suất OTP và quản lý trạng thái online/offline đa thiết bị, kết hợp đồng bộ tin nhắn sau khi kết nối lại.",
+          "Đảm bảo thứ tự tin nhắn khi gửi đồng thời bằng pessimistic locking và ràng buộc unique (conversation_id, sequence).",
+          "Kiểm thử backend, E2E bằng Playwright và smoke test hiệu năng cục bộ với k6.",
+        ],
+        message: `Dự án cá nhân full-stack được xây dựng bằng Java 21, Spring Boot 3,
+          React và TypeScript theo kiến trúc modular monolith. Ứng dụng hỗ trợ
+          nhắn tin cá nhân và nhóm theo thời gian thực qua STOMP/WebSocket,
+          chia sẻ ảnh, thông báo, trạng thái đang nhập, xác nhận đã đọc và
+          đồng bộ tin nhắn khi kết nối lại.
+
+          Hệ thống xác thực gồm đăng ký bằng email OTP, Google OAuth2,
+          JWT access/refresh token, refresh-token rotation và reuse detection.
+          Redis được sử dụng cho rate limiting và presence đa thiết bị.
+
+          Để tránh trùng sequence khi nhiều người gửi tin nhắn cùng lúc,
+          backend khóa bản ghi conversation trong transaction và sử dụng
+          unique constraint trên (conversation_id, sequence).
+          Dự án được kiểm thử với backend tests, Playwright E2E và k6 tại local.`,
+      },
+      en: {
+        summary:
+          "A full-stack realtime messaging app with direct and group chats, secure authentication, and multi-device online presence.",
+        bullets: [
+          "Designed a modular-monolith backend using REST APIs and STOMP/WebSocket for messaging, typing indicators, and read receipts.",
+          "Implemented email OTP registration, Google OAuth2, JWT refresh-token rotation, reuse detection, and session revocation.",
+          "Built group conversations with member roles, invite links, join approvals, replies, message editing, and soft deletion.",
+          "Used Redis for OTP rate limiting and multi-device presence, with message synchronization after reconnecting.",
+          "Ensured consistent per-conversation message sequencing under concurrency using pessimistic locking and a composite unique constraint.",
+          "Validated the application with backend tests, Playwright E2E tests, and local k6 smoke tests.",
+        ],
+        message: `This personal full-stack project uses Java 21, Spring Boot 3,
+          React, and TypeScript with a modular-monolith backend. It supports
+          realtime direct and group chats over STOMP/WebSocket, image sharing,
+          notifications, typing indicators, read receipts, and reconnect sync.
+
+          Authentication includes email OTP signup, Google OAuth2, JWT
+          access/refresh tokens, refresh-token rotation, and reuse detection.
+          Redis handles rate limiting and multi-device online/offline presence.
+
+          To prevent duplicate message sequences during concurrent sends,
+          the backend locks the conversation row within a transaction and
+          enforces a unique constraint on (conversation_id, sequence).
+          The application was validated using backend tests, Playwright E2E,
+          and local k6 smoke tests.`,
+      },
+    },
+    tech: [
+      techs.find((t) => t.id === "java")!,
+      techs.find((t) => t.id === "spring")!,
+      techs.find((t) => t.id === "react")!,
+      techs.find((t) => t.id === "typescript")!,
+      techs.find((t) => t.id === "mysql")!,
+      techs.find((t) => t.id === "redis")!,
+      techs.find((t) => t.id === "docker")!,
+    ],
+    images: {
+      vi: [
+        {
+          url: "https://res.cloudinary.com/dqobwpob4/image/upload/v1792776407/Screenshot_2026-10-24_002627_w6er3n.png",
+          description: "Video demo các chức năng chính của ứng dụng Chat.",
+        },
+      ],
+      en: [
+        {
+          url: "https://img.youtube.com/vi/Bmk9TcEyu90/hqdefault.jpg",
+          description:
+            "Demo video highlighting the application's main features.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "tekvault",
     name: {
       en: "Internal Secret Management Platform (Fork of Infisical OSS)",
       vi: "Nền tảng quản lý secret nội bộ (Fork từ Infisical OSS)",
     },
     duration: "09/2025 - 11/2025",
-    link: "https://tekvault.teknix.services",
     role: {
       vi: "Fullstack Developer",
       en: "Fullstack Developer",

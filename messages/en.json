@@ -12,10 +12,11 @@
         "en": "English"
       }
     },
+
     "banner": {
       "greeting1": "Tran",
-      "greeting2": "A Frontend Developer",
-      "motto": "Interfaces shape first impressions, \n code shapes experience"
+      "greeting2": "A Software Engineer",
+      "motto": "I enjoy building things, \n solving problems, and learning along the way."
     },
     "skills": {
       "header": "I constantly try to imporve",
@@ -28,6 +29,7 @@
       "tooltipGit": "View source code",
       "website": "View Website"
     },
+
     "experience": {
       "header1": "My",
       "header2": "and",
@@ -36,20 +38,33 @@
       "details": {
         "university": {
           "name": "Can Tho University",
-          "time": "08/2021 - 12/2025",
-          "major": "Information systems",
-          "gpa": "3.78/4.00",
+          "time": "08/2021 - 02/2026",
+          "major": "Information Systems",
+          "gpa": "GPA: 3.78/4.00",
           "description": ""
         },
-        "company": {
+        "teknix": {
           "name": "TekNix Corporation",
           "time": "09/2025 - 12/2025",
           "location": "Can Tho",
           "position": "Fullstack Developer Intern",
-          "description": "Contributed to two open-source projects during the internship: extended an internal Infisical-based secret management platform with cross-environment secret referencing, and migrated DUB APIs from Next.js to NestJS to build a standardized backend."
+          "description": "Contributed to two open-source projects: extended an Infisical-based secret management platform with cross-environment secret referencing and migrated DUB APIs from Next.js to NestJS."
+        },
+        "wecamp": {
+          "name": "National Australia Bank (NAB)",
+          "time": "03/2026 - 05/2026",
+          "location": "Ho Chi Minh City",
+          "position": "WeCamp Trainee",
+          "description": "Completed an intensive software engineering training program covering software development fundamentals, databases, networking, testing, and the software development lifecycle."
+        },
+        "starcamp": {
+          "name": "National Australia Bank (NAB)",
+          "time": "07/2026 - 10/2026",
+          "location": "Ho Chi Minh City",
+          "position": "StarCamp - Software Engineer Intern",
+          "description": "Collaborated in an 8-member team to develop a Spring Boot merchant management platform integrated with NAB Hive. Contributed to merchant onboarding, store management, profiles, promotions, reviews, REST APIs, analytics, and testing."
         }
-      },
-      "download": "View My CV"
+      }
     },
     "about": {
       "details": {
@@ -63,7 +78,7 @@
         },
         "address": {
           "label": "Address",
-          "value": "Can Tho"
+          "value": "HCMC"
         },
         "phone": {
           "label": "Phone",
@@ -75,11 +90,13 @@
         }
       },
       "title": "About Me",
-      "message": "Hello, my name is Tran. I graduated with a major in Information Systems and I am currently seeking an opportunity as a Software Engineer (Backend or Frontend). I have experience building modern, user-friendly web interfaces using React, Next.js, TypeScript, and Tailwind CSS, along with a basic foundation in backend development with Java Spring Boot. I have worked on UI development, state management, and API integration, and I also have an understanding of system design and API development. My goal is to grow as a well-rounded Software Engineer with strong technical skills and a product-oriented mindset, contributing long-term value to the team and the company."
+
+      "message": "Hello, I'm Tran, an Information Systems graduate with hands-on experience in software development. I specialize in backend development using Java, Spring Boot, RESTful APIs, MySQL, PostgreSQL, while also having experience building web applications with React and TypeScript. Through my internships and personal projects, I've gained practical experience in designing APIs, implementing business logic, working with databases, and developing full-stack applications. I'm passionate about solving technical challenges, writing clean and maintainable code, and continuously improving my engineering skills. I'm currently seeking a Software Engineer opportunity where I can contribute to real-world projects and grow as a professional engineer."
     },
     "contact": {
       "title": "Contact Me",
-      "message": "Thank you for reviewing my portfolio. I am open to Frontend Developer opportunities and would welcome the opportunity to connect.",
+
+      "message": "Thank you for taking the time to explore my portfolio. I'm currently seeking Software Engineer opportunities, with a focus on backend and full-stack development. I'd love to connect and discuss how I can contribute to your team.",
       "fields": {
         "name": {
           "required": "Please enter your name"

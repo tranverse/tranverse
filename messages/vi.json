@@ -13,9 +13,9 @@
       }
     },
     "banner": {
-      "greeting1": "Trân",
-      "greeting2": "một lập trình viên Frontend",
-      "motto": "Giao diện tạo ấn tượng ban đầu, mã nguồn tạo nên trải nghiệm"
+      "greeting1": "Tran",
+      "greeting2": "A Software Engineer",
+      "motto": "I enjoy building things, \n solving problems, and learning along the way."
     },
     "skills": {
       "header": "Liên tục cải thiện",
@@ -28,6 +28,7 @@
       "tooltipGit": "Xem mã nguồn",
       "website": "Xem website"
     },
+
     "experience": {
       "header1": "",
       "header2": "và",
@@ -36,19 +37,33 @@
       "details": {
         "university": {
           "name": "Đại học Cần Thơ",
-          "time": "08/2021 - 12/2025",
-          "major": "Hệ thống thông tin",
-          "gpa": "3.78/4.00"
+          "time": "08/2021 - 02/2026",
+          "major": "Ngành Hệ thống Thông tin",
+          "gpa": "GPA: 3.78/4.00",
+          "description": ""
         },
-        "company": {
+        "teknix": {
           "name": "Công ty TekNix – Chi nhánh Cần Thơ",
           "time": "09/2025 - 12/2025",
           "location": "Cần Thơ",
           "position": "Thực tập sinh Lập trình Fullstack",
-          "description": "Tham gia phát triển hai dự án trong thời gian thực tập. Dự án thứ nhất là nền tảng quản lý secret nội bộ fork từ Infisical, trực tiếp chỉnh sửa và mở rộng mã nguồn, triển khai chức năng secret reference để quản lý và tham chiếu secret giữa các môi trường. Dự án thứ hai là dự án DUB, thực hiện chuyển đổi và tái cấu trúc các API từ Next.js sang NestJS, tách backend độc lập và chuẩn hóa kiến trúc hệ thống."
+          "description": "Tham gia phát triển hai dự án mã nguồn mở: mở rộng nền tảng quản lý secret nội bộ dựa trên Infisical với chức năng tham chiếu và đồng bộ secret giữa các môi trường; chuyển đổi và tái cấu trúc API của dự án DUB từ Next.js sang NestJS."
+        },
+        "wecamp": {
+          "name": "National Australia Bank (NAB)",
+          "time": "03/2026 - 05/2026",
+          "location": "TP. Hồ Chí Minh",
+          "position": "Học viên chương trình WeCamp",
+          "description": "Tham gia chương trình đào tạo kỹ thuật phần mềm, tập trung vào quy trình phát triển phần mềm (SDLC), Java, React, cơ sở dữ liệu, hệ điều hành, mạng máy tính và kiểm thử phần mềm."
+        },
+        "starcamp": {
+          "name": "National Australia Bank (NAB)",
+          "time": "07/2026 - 10/2026",
+          "location": "TP. Hồ Chí Minh",
+          "position": "Học viên StarCamp – Software Engineer (Backend)",
+          "description": "Phối hợp cùng nhóm 8 thành viên phát triển nền tảng quản lý merchant bằng Java Spring Boot, tích hợp với NAB Hive. Tham gia xây dựng các chức năng onboarding, quản lý cửa hàng, hồ sơ merchant, chương trình khuyến mãi, đánh giá, REST APIs, phân tích dữ liệu và kiểm thử tự động."
         }
-      },
-      "download": "Xem CV"
+      }
     },
     "about": {
       "details": {
@@ -62,7 +77,7 @@
         },
         "address": {
           "label": "Địa chỉ",
-          "value": "Cần Thơ"
+          "value": "HCMC"
         },
         "phone": {
           "label": "Số điện thoại",
@@ -74,11 +89,13 @@
         }
       },
       "title": "Về Tôi",
-      "message": "Xin chào, tôi là Trân. Tôi tốt nghiệp chuyên ngành Hệ thống Thông tin và đang tìm kiếm cơ hội ở vị trí Software Engineer (Backend hoặc Frontend). Tôi có kinh nghiệm xây dựng giao diện web với React, Next.js, TypeScript và Tailwind CSS, đồng thời có nền tảng backend với Java Spring Boot. Tôi đã làm việc với UI, quản lý trạng thái và tích hợp API, cũng như hiểu về thiết kế hệ thống. Tôi mong muốn phát triển kỹ năng, tham gia vào các dự án thực tế và trở thành một Software Engineer có tư duy sản phẩm."
+
+      "message": "Xin chào, tôi là Trân, tốt nghiệp ngành Hệ thống Thông tin và có kinh nghiệm thực tế trong phát triển phần mềm. Tôi tập trung vào Backend với Java, Spring Boot, RESTful APIs, MySQL, PostgreSQL, đồng thời có kinh nghiệm phát triển ứng dụng web với React và TypeScript. Thông qua các kỳ thực tập và dự án cá nhân, tôi đã tích lũy kinh nghiệm thiết kế API, xử lý logic nghiệp vụ, làm việc với cơ sở dữ liệu và phát triển ứng dụng Fullstack. Tôi yêu thích giải quyết các vấn đề kỹ thuật, xây dựng mã nguồn rõ ràng, dễ bảo trì và không ngừng nâng cao kỹ năng. Hiện tại, tôi đang tìm kiếm cơ hội Software Engineer để đóng góp vào các dự án thực tế và phát triển chuyên môn lâu dài."
     },
     "contact": {
       "title": "Liên Hệ Tôi",
-      "message": "Cảm ơn anh/chị đã xem portfolio của tôi. Tôi đang tìm kiếm cơ hội ở vị trí Frontend Developer và rất mong được kết nối.",
+
+      "message": "Cảm ơn anh/chị đã dành thời gian xem portfolio của tôi. Hiện tại, tôi đang tìm kiếm cơ hội ở vị trí Software Engineer, tập trung vào Backend và Fullstack. Tôi rất mong có cơ hội kết nối, trao đổi và đóng góp vào đội ngũ của anh/chị.",
       "fields": {
         "name": {
           "required": "Vui lòng nhập tên của bạn"

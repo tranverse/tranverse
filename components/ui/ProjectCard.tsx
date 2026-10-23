@@ -56,16 +56,6 @@ const ProjectCard = ({ project, t }: Props) => {
                 <FaGithub className="text-foreground cursor-pointer hover:scale-110   " />
               </Tooltip>
             )}
-            {project.id === "tekvault" && (
-              <a
-                target="_blank"
-                href="https://tekvault.teknix.services/"
-                className=" text-highlight transition-all  duration-300  hover:scale-110   
-                    "
-              >
-                {t("website")}
-              </a>
-            )}
             <Link href={`/projects/${project.id}`}>
               <span
                 className="inline-block text-highlight transition-all duration-300  hover:scale-110

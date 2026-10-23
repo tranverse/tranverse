@@ -15,31 +15,41 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: {
-    default: "Tran Ho | Frontend Developer",
+    default: "Tran Ho | Software Engineer",
     template: "%s | Tran Ho",
   },
+
   description:
-    "Tran Ho – Frontend Developer specializing in React, Next.js, Ant Design, and modern web technologies. View my portfolio and projects.",
+    "Portfolio of Tran Ho, a Software Engineer focused on backend and full-stack development with Java, Spring Boot, React, and TypeScript. Explore my projects, skills, and experience.",
+
   keywords: [
     "Tran Ho",
-    "Frontend Developer",
+    "Ho Nguyen Bao Tran",
+    "Software Engineer",
+    "Backend Developer",
+    "Java Developer",
+    "Spring Boot Developer",
+    "Full Stack Developer",
     "React Developer",
-    "Next.js Portfolio",
-    "Web Developer Vietnam",
+    "TypeScript",
+    "REST API",
+    "Software Engineer Vietnam",
+    "Software Engineer Portfolio",
   ],
+
   authors: [{ name: "Tran Ho" }],
   creator: "Tran Ho",
+
   metadataBase: new URL("https://tranho.skymart.id.vn"),
 
   openGraph: {
-    title: "Tran Ho | Frontend Developer",
+    title: "Tran Ho | Software Engineer",
     description:
-      "Portfolio of Tran Ho – Frontend Developer with React & Next.js",
+      "Explore the portfolio of Tran Ho, a Software Engineer passionate about backend development, full-stack applications, and building practical software solutions.",
     url: "https://tranho.skymart.id.vn",
-    siteName: "Tran Portfolio",
+    siteName: "Tran Ho Portfolio",
     locale: "en_US",
     type: "website",
   },

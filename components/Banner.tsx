@@ -41,7 +41,7 @@ const Banner = () => {
             "absolute inset-0",
             "[background-size:20px_20px]",
             "[background-image:radial-gradient(#d4d4d4_1px,transparent_1px)]",
-            "dark:[background-image:radial-gradient(#404040_1px,transparent_1px)]"
+            "dark:[background-image:radial-gradient(#404040_1px,transparent_1px)]",
           )}
         />
         {/* Radial gradient for the container to give a faded look */}
@@ -53,13 +53,13 @@ const Banner = () => {
           <canvas
             id="dotlottie-canvas"
             style={{ width: "400px", height: "400px" }}
-            ref={containerRef}   
+            ref={containerRef}
           ></canvas>
         </div>
         <div className="md:text-4xl text-xl font-bold text-center ">
           <div className="flex justify-center items-center whitespace-nowrap">
             <span className="whitespace-pre">
-              {locale === "vi" ? "Xin chào! Mình là " : "Hi! I'm "}
+              {locale === "vi" ? "Hi! I'm " : "Hi! I'm "}
             </span>
             <span className="text-[#A362FF]">
               <Typewriter
